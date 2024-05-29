@@ -154,7 +154,7 @@ jobs:
   - task: GitHubRelease@1
     displayName: 'Publish GitHub release $(build.sourceBranchName)'
     inputs:
-      gitHubConnection: 'Tranzitron'
+      gitHubConnection: 'GitHubConnection'
       releaseNotesSource: inline
       assets: '$(Pipeline.Workspace)/**/*.dll'
       addChangeLog: false
